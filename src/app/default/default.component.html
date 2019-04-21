@@ -1,0 +1,13 @@
+<div class="flex-container flex-column flex-center">
+  <h1>
+    Default
+  </h1>
+  <div class="flex-container button">
+    <div #ref>
+      <ng-content></ng-content>
+    </div>
+    <div *ngIf="ref.children.length == 0" class="flex-container space-between">
+      <button>Submit</button>
+    </div>
+  </div>
+</div>
